@@ -28,6 +28,7 @@ test:
 about:
   home: https://github.com/mwilliamson/locket.py
   license: BSD 2-Clause
+  license_file: LICENSE
   summary: File-based locks for Python for Linux and Windows
 
 extra:
