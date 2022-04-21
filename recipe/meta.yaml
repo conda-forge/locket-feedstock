@@ -1,4 +1,4 @@
-{% set version = "0.2.0" %}
+{% set version = "1.0.0" %}
 
 package:
   name: locket
@@ -7,12 +7,12 @@ package:
 source:
   fn: locket-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/l/locket/locket-{{ version }}.tar.gz
-  md5: fe870949c513d8f7079ba352463833ca
+  md5: fff6d2fcd92fbeb9af9dbc260eb0b5e8
 
 build:
   noarch: python
-  number: 2
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
