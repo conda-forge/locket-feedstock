@@ -3,7 +3,7 @@ About locket
 
 Home: https://github.com/mwilliamson/locket.py
 
-Package license: BSD 2-Clause
+Package license: BSD-2-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/locket-feedstock/blob/main/LICENSE.txt)
 
