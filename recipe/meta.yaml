@@ -1,4 +1,4 @@
-{% set version = "0.2.1" %}
+{% set version = "1.0.0" %}
 
 package:
   name: locket
@@ -7,7 +7,7 @@ package:
 source:
   fn: locket-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/l/locket/locket-{{ version }}.tar.gz
-  md5: b5e4e9dea58264f636f7044c867e2c6d
+  md5: fff6d2fcd92fbeb9af9dbc260eb0b5e8
 
 build:
   noarch: python
@@ -17,11 +17,11 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*
     - setuptools
 
   run:
-    - python
+    - python >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*
 
 test:
   imports:
@@ -29,7 +29,7 @@ test:
 
 about:
   home: https://github.com/mwilliamson/locket.py
-  license: BSD 2-Clause
+  license: BSD-2-Clause
   license_file: LICENSE
   summary: File-based locks for Python for Linux and Windows
 
